@@ -1,0 +1,16 @@
+.MainImg{
+  max-width: 1280px;
+}
+
+.MainImg img{
+  width: 1280px;
+  max-height: 400px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.MainImg .slick-prev::before,
+.MainImg .slick-next::before {
+  color: rgb(0, 0, 0) !important;
+  font-size: 25px !important;
+}

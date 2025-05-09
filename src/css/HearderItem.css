@@ -1,0 +1,17 @@
+.HearderItem{
+  display: flex;
+  text-align: center;
+}
+
+.HearderItem .login{
+  margin-right: 40px;
+}
+.HearderItem div{
+  line-height: 70px;
+  padding: 0 20px 0 20px;
+  cursor: pointer;
+}
+
+.HearderItem div:hover{
+  font-weight: 800;
+}
