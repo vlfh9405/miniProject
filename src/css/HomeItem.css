@@ -1,0 +1,36 @@
+.HomeItem{
+  cursor: pointer;
+  width: 300px;
+  height: 250px;
+  border: 1px solid rgb(220,220,220);
+  margin-left: 14px;
+  margin-bottom: 20px;
+}
+.HomeItem:hover{
+  box-shadow: rgb(209, 208, 208) 5px 5px 10px;
+}
+
+.HomeItem img{
+  width: 100%;
+  height: 130px;
+}
+.HomeItem .textBox{
+  padding: 20px;
+}
+.HomeItem .productName{
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 20px;
+  font-weight: 500;
+  text-shadow: rgb(197, 194, 194) 2px 2px 5px;
+}
+
+.HomeItem .productPrice{
+  font-size: 20px;
+  font-weight: 700;
+  color: rgb(255, 2, 2);
+  text-shadow: rgb(197, 194, 194) 3px 3px 10px;
+  margin-top: 20px;
+  float:right
+}

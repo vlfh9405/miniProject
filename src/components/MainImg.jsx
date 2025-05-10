@@ -23,7 +23,6 @@ const MainImg = () => {
     draggable: false,
     autoplay: true,
     arrows: true,
-    
   }
   return(
     <Slider {...settings} className="MainImg">
