@@ -1,9 +1,11 @@
+import ProductRouting from "./ProductRouting";
+
 
 const Product = () => {
   return(
-    <div>
-      <h1>Product</h1>
-    </div>
+     <>
+         <ProductRouting />
+    </>
   )
 }
 export default Product;

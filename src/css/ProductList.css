@@ -1,0 +1,109 @@
+/* .product-list-container: 상품 목록을 감싸는 컨테이너 스타일 */
+.product-list-container {
+  display: flex; /* flexbox 레이아웃을 사용하여 아이템들을 배치 */
+  flex-wrap: wrap; /* 화면 너비에 맞게 아이템들이 줄 바꿈을 할 수 있게 설정 */
+  gap: 20px; /* 아이템들 사이에 20px 간격을 추가 */
+  padding: 0; /* 컨테이너의 기본 padding을 제거 */
+  list-style: none; /* 리스트 아이템의 기본 스타일을 제거 */
+  justify-content: center; /* 아이템들을 중앙 정렬 */
+}
+
+/* .product-item: 각 상품 아이템의 스타일 */
+.product-item {
+  width: calc(50% - 10px); /* 각 상품 아이템의 너비를 화면의 50%에서 10px을 뺀 크기로 설정 */
+  border: 1px solid #ddd; /* 연한 회색 실선 테두리를 추가 */
+  padding: 10px; /* 아이템 안쪽 여백을 10px로 설정 */
+  display: flex; /* flexbox 레이아웃을 사용하여 아이템 내의 요소들을 배치 */
+  align-items: center; /* 수직 중앙 정렬 */
+  box-sizing: border-box; /* padding과 border를 요소 크기 안에 포함 */
+  border-radius: 8px; /* 모서리를 8px로 둥글게 설정 */
+  background-color: #fff; /* 배경색을 흰색으로 설정 */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05); /* 미세한 그림자 효과 추가 */
+  transition: transform 0.2s, box-shadow 0.2s; /* hover 시의 변화를 부드럽게 처리 */
+}
+
+/* .product-item: 상품 아이템에 마우스를 올렸을 때의 효과 */
+.product-item:hover {
+  transform: translateY(-4px); /* 아이템을 위로 4px 이동시켜 강조 */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* 그림자 효과를 더 강하게 설정 */
+}
+
+/* .product-image: 상품 이미지의 스타일 */
+.product-image {
+  width: 120px; /* 이미지의 너비를 120px로 설정 */
+  height: 120px; /* 이미지의 높이를 120px로 설정 */
+  object-fit: cover; /* 이미지 비율을 유지하면서 컨테이너 크기에 맞게 자름 */
+  margin-right: 20px; /* 이미지와 텍스트 사이에 20px 여백 추가 */
+  border-radius: 4px; /* 이미지의 모서리를 4px로 둥글게 설정 */
+  border: 1px solid #eee; /* 연한 회색 실선 테두리 추가 */
+}
+
+/* .product-details: 상품 정보 영역 스타일 */
+.product-details {
+  flex: 1; /* 남은 공간을 차지하도록 설정 */
+}
+
+/* .product-details a: 상품 이름 링크 스타일 */
+.product-details a {
+  font-weight: bold; /* 링크 텍스트를 굵게 표시 */
+  text-decoration: none; /* 링크의 기본 밑줄을 제거 */
+  color: #333; /* 텍스트 색상을 어두운 회색으로 설정 */
+  font-size: 1.1em; /* 폰트 크기를 1.1배로 설정 */
+}
+
+/* .product-details a: 상품 이름에 마우스를 올렸을 때의 스타일 */
+.product-details a:hover {
+  color: #007bff; /* 마우스를 올렸을 때 파란색으로 텍스트 색상 변경 */
+}
+
+/* .product-details p: 상품 정보 텍스트 스타일 */
+.product-details p {
+  margin: 4px 0; /* 각 항목 간의 간격을 4px로 설정 */
+  font-size: 0.95em; /* 폰트 크기를 약간 작게 설정 */
+}
+
+/* .product-details .price: 상품 가격 스타일 */
+.product-details .price {
+  color: #e74c3c; /* 가격을 빨간색으로 설정 */
+  font-weight: bold; /* 가격을 굵게 표시 */
+  font-size: 1.05em; /* 가격 폰트 크기를 1.05배로 설정 */
+}
+
+/* .product-details .category: 상품 카테고리 스타일 */
+.product-details .category {
+  color: #888; /* 카테고리 텍스트 색상을 연한 회색으로 설정 */
+  font-size: 0.9em; /* 폰트 크기를 조금 더 작게 설정 */
+}
+
+/* .product-details input[type='number']: 수량 입력 필드 스타일 */
+.product-details input[type='number'] {
+  width: 60px; /* 입력 필드의 너비를 60px로 설정 */
+  margin-right: 10px; /* 입력 필드와 버튼 사이에 10px 여백 추가 */
+  margin-top: 5px; /* 입력 필드 상단에 5px 여백 추가 */
+  padding: 4px; /* 입력 필드 안쪽 여백을 4px로 설정 */
+  border-radius: 4px; /* 입력 필드 모서리를 둥글게 설정 */
+  border: 1px solid #ccc; /* 연한 회색 실선 테두리 추가 */
+}
+
+/* .add-to-cart-button: 장바구니 추가 버튼 스타일 */
+.add-to-cart-button {
+  background-color: #007bff; /* 배경색을 파란색으로 설정 */
+  color: white; /* 버튼 텍스트 색을 흰색으로 설정 */
+  border: none; /* 버튼의 테두리를 제거 */
+  padding: 6px 12px; /* 버튼 안쪽 여백을 6px, 12px로 설정 */
+  cursor: pointer; /* 클릭할 수 있음을 표시 */
+  margin-top: 5px; /* 버튼 상단에 5px 여백 추가 */
+  border-radius: 4px; /* 버튼 모서리를 둥글게 설정 */
+  transition: background-color 0.2s; /* 마우스 오버 시 배경색 변화 효과 설정 */
+}
+
+/* .add-to-cart-button: 장바구니 추가 버튼에 마우스를 올렸을 때의 스타일 */
+.add-to-cart-button:hover {
+  background-color: #0056b3; /* 마우스를 올렸을 때 배경색을 진한 파란색으로 변경 */
+}
+
+/* .add-to-cart-button: 비활성화된 장바구니 추가 버튼 스타일 */
+.add-to-cart-button:disabled {
+  background-color: #ccc; /* 비활성화된 버튼의 배경색을 회색으로 설정 */
+  cursor: not-allowed; /* 클릭할 수 없음을 표시 */
+}

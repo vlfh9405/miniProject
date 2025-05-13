@@ -1,0 +1,29 @@
+/* .search-bar-wrapper: 검색 바를 감싸는 전체 컨테이너 스타일 */
+.search-bar-wrapper {
+  display: flex; /* flexbox 레이아웃을 사용하여 내부 요소들을 배치 */
+  justify-content: center; /* 내부 요소들을 수평 중앙 정렬 */
+  margin: 20px 0; /* 상하 여백을 20px로 설정 */
+}
+
+/* .search-bar-form: 검색 바의 폼 스타일 */
+.search-bar-form {
+  display: flex; /* flexbox 레이아웃을 사용하여 입력 필드, 드롭다운, 버튼을 나란히 배치 */
+  align-items: center; /* 아이템들을 수직 중앙 정렬 */
+  gap: 10px; /* 아이템들 사이에 10px 간격을 추가 */
+}
+
+/* .search-bar-input: 검색어 입력 필드 스타일 */
+.search-bar-input {
+  padding: 5px; /* 입력 필드의 안쪽 여백을 5px로 설정 */
+  width: 250px; /* 입력 필드의 너비를 250px로 설정 */
+}
+
+/* .search-bar-select: 카테고리 선택 드롭다운 스타일 */
+.search-bar-select {
+  padding: 5px; /* 드롭다운의 안쪽 여백을 5px로 설정 */
+}
+
+/* .search-bar-button: 검색 버튼 스타일 */
+.search-bar-button {
+  padding: 5px 10px; /* 버튼 안쪽 여백을 5px, 10px로 설정 */
+}

@@ -1,0 +1,70 @@
+/* .product-detail-container: 상품 상세 페이지의 컨테이너 스타일 */
+.product-detail-container {
+  max-width: 600px; /* 최대 너비를 600px로 설정 */
+  margin: 40px auto; /* 위 아래 여백 40px, 좌우 자동 중앙 정렬 */
+  padding: 20px; /* 안쪽 여백을 20px로 설정 */
+  border: 1px solid #ddd; /* 연한 회색 실선 테두리 추가 */
+  border-radius: 8px; /* 모서리를 8px로 둥글게 설정 */
+  background-color: #fff; /* 배경색을 흰색으로 설정 */
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05); /* 약간의 그림자 효과를 추가하여 카드처럼 보이게 설정 */
+  text-align: center; /* 텍스트를 중앙 정렬 */
+}
+
+/* .product-detail-image: 상품 이미지 스타일 */
+.product-detail-image {
+  width: 100%; /* 이미지의 너비를 100%로 설정하여 부모 컨테이너에 맞게 채웁니다. */
+  max-height: 400px; /* 이미지의 최대 높이를 400px로 설정 */
+  object-fit: cover; /* 이미지 비율을 유지하면서 컨테이너를 채우도록 설정 */
+  border-radius: 6px; /* 이미지의 모서리를 6px로 둥글게 설정 */
+  margin-bottom: 20px; /* 이미지 아래에 20px 여백을 추가 */
+}
+
+/* .product-detail-name: 상품 이름 스타일 */
+.product-detail-name {
+  font-size: 1.6em; /* 폰트 크기를 1.6배로 설정 */
+  margin-bottom: 10px; /* 이름 아래에 10px 여백을 추가 */
+}
+
+/* .product-detail-price: 상품 가격 스타일 */
+.product-detail-price {
+  font-size: 1.2em; /* 폰트 크기를 1.2배로 설정 */
+  font-weight: bold; /* 가격을 굵게 표시 */
+  color: #e74c3c; /* 가격 색상을 빨간색으로 설정 */
+  margin-bottom: 5px; /* 가격 아래에 5px 여백을 추가 */
+}
+
+/* .product-detail-category: 상품 카테고리 스타일 */
+.product-detail-category {
+  color: #888; /* 카테고리 텍스트 색상을 연한 회색으로 설정 */
+  font-size: 0.95em; /* 폰트 크기를 약간 작게 설정 */
+  margin-bottom: 15px; /* 카테고리 아래에 15px 여백을 추가 */
+}
+
+/* .product-detail-description: 상품 상세 설명 스타일 */
+.product-detail-description {
+  text-align: left; /* 설명을 왼쪽 정렬 */
+  font-size: 1em; /* 기본 폰트 크기 설정 */
+  line-height: 1.5; /* 줄 간격을 1.5로 설정하여 가독성 향상 */
+  color: #333; /* 텍스트 색상을 진한 회색으로 설정 */
+}
+
+/* .product-detail-back-btn: 상품 상세 페이지에서 돌아가기 버튼 스타일 */
+.product-detail-back-btn {
+  position: absolute; /* 버튼을 절대 위치로 배치 */
+  right: 40px; /* 오른쪽에서 40px 떨어지게 설정 */
+  bottom: 40px; /* 하단에서 40px 떨어지게 설정 */
+  padding: 10px 16px; /* 버튼의 안쪽 여백을 10px, 16px로 설정 */
+  background-color: #007bff; /* 배경색을 파란색으로 설정 */
+  color: white; /* 버튼 텍스트 색상을 흰색으로 설정 */
+  border: none; /* 버튼의 테두리를 제거 */
+  border-radius: 5px; /* 버튼 모서리를 5px로 둥글게 설정 */
+  font-size: 0.95em; /* 버튼 텍스트 크기를 약간 작게 설정 */
+  cursor: pointer; /* 버튼을 클릭할 수 있음을 표시 */
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); /* 버튼에 그림자 효과 추가 */
+  transition: background-color 0.2s; /* 배경색 전환 효과를 부드럽게 설정 */
+}
+
+/* .product-detail-back-btn: 돌아가기 버튼에 마우스 오버 시 스타일 */
+.product-detail-back-btn:hover {
+  background-color: #0056b3; /* 마우스 오버 시 배경색을 진한 파란색으로 변경 */
+}

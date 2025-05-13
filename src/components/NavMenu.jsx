@@ -2,6 +2,7 @@ import "../css/NavMenu.css";
 import { useNavigate, useLocation } from "react-router-dom";
 import { useState, useEffect } from "react";
 
+
 const NaviMenu = () => {
   const navigate = useNavigate();
   const location = useLocation();

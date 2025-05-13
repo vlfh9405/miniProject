@@ -1,0 +1,96 @@
+/* .cart-container: 장바구니의 전체 컨테이너 스타일 */
+.cart-container {
+  max-width: 800px; /* 최대 너비를 800px로 설정 */
+  margin: 40px auto; /* 위 아래 여백 40px, 좌우 자동 중앙 정렬 */
+  padding: 20px; /* 안쪽 여백을 20px로 설정 */
+  background-color: #fff; /* 배경색을 흰색으로 설정 */
+  border-radius: 8px; /* 모서리를 8px 만큼 둥글게 설정 */
+}
+
+/* .cart-title: 장바구니 제목 스타일 */
+.cart-title {
+  font-size: 1.5em; /* 폰트 크기를 1.5배로 설정 */
+  font-weight: bold; /* 폰트 굵기를 굵게 설정 */
+  margin-bottom: 20px; /* 제목 아래에 20px 여백 추가 */
+  text-align: center; /* 제목을 중앙 정렬 */
+}
+
+/* .cart-item: 각 장바구니 아이템의 스타일 */
+.cart-item {
+  display: flex; /* flexbox로 아이템을 배치 */
+  justify-content: space-between; /* 아이템을 양 끝으로 배치 */
+  align-items: center; /* 수직 중앙 정렬 */
+  padding: 15px 10px; /* 안쪽 여백을 15px, 10px로 설정 */
+  border-bottom: 1px solid #eee; /* 아이템 하단에 연한 회색 실선 추가 */
+}
+
+/* .cart-item-info: 장바구니 아이템의 정보를 담는 영역 */
+.cart-item-info {
+  flex: 1; /* flex 요소로 비율을 1로 설정하여 나머지 공간을 차지 */
+}
+
+/* .cart-item-name: 장바구니 아이템의 이름 스타일 */
+.cart-item-name {
+  font-weight: bold; /* 아이템 이름을 굵게 표시 */
+  margin-bottom: 4px; /* 이름과 그 아래 내용 사이에 4px 여백 추가 */
+}
+
+/* .cart-item-actions: 장바구니 아이템의 액션 버튼 스타일 */
+.cart-item-actions button {
+  margin: 0 5px; /* 버튼 사이에 5px 여백 추가 */
+  padding: 5px 10px; /* 버튼 안쪽 여백을 5px, 10px로 설정 */
+  font-size: 0.9em; /* 버튼 텍스트 크기를 약간 작게 설정 */
+  border: none; /* 버튼의 테두리를 제거 */
+  border-radius: 4px; /* 버튼 모서리를 4px로 둥글게 설정 */
+  cursor: pointer; /* 버튼을 클릭할 수 있음을 표시 */
+}
+
+/* .cart-item-actions 버튼에 마우스 오버 시 스타일 */
+.cart-item-actions button:hover {
+  opacity: 0.9; /* 마우스 오버 시 버튼 투명도를 90%로 설정 */
+}
+
+/* 첫 번째 버튼 스타일: 수량 증가 버튼 */
+.cart-item-actions button:first-child {
+  background-color: #ddd; /* 배경색을 연한 회색으로 설정 */
+}
+
+/* 두 번째 버튼 스타일: 수량 감소 버튼 */
+.cart-item-actions button:nth-child(2) {
+  background-color: #ccc; /* 배경색을 회색으로 설정 */
+}
+
+/* 세 번째 버튼 스타일: 삭제 버튼 */
+.cart-item-actions button:last-child {
+  background-color: #e74c3c; /* 배경색을 빨간색으로 설정 */
+  color: white; /* 버튼 텍스트 색을 흰색으로 설정 */
+}
+
+/* .cart-total: 장바구니 총액 스타일 */
+.cart-total {
+  text-align: right; /* 텍스트를 오른쪽 정렬 */
+  font-size: 1.2em; /* 폰트 크기를 1.2배로 설정 */
+  font-weight: bold; /* 폰트를 굵게 설정 */
+  margin-top: 20px; /* 총액 위에 20px 여백 추가 */
+}
+
+/* .cart-purchase-btn: 장바구니 구매하기 버튼 스타일 */
+.cart-purchase-btn {
+  position: fixed; /* 화면에 고정 위치로 배치 */
+  bottom: 30px; /* 화면 하단에서 30px 떨어지게 설정 */
+  right: 40px; /* 화면 오른쪽에서 40px 떨어지게 설정 */
+  padding: 12px 20px; /* 버튼의 안쪽 여백을 12px, 20px로 설정 */
+  background-color: #4CAF50; /* 배경색을 초록색으로 설정 */
+  color: white; /* 버튼 텍스트 색을 흰색으로 설정 */
+  border: none; /* 버튼의 테두리를 제거 */
+  border-radius: 6px; /* 버튼 모서리를 6px로 둥글게 설정 */
+  font-size: 1em; /* 폰트 크기를 기본 크기로 설정 */
+  cursor: pointer; /* 버튼을 클릭할 수 있음을 표시 */
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1); /* 버튼에 그림자 효과 추가 */
+  transition: background-color 0.2s; /* 배경색 변화 시 부드럽게 전환되도록 설정 */
+}
+
+/* .cart-purchase-btn: 구매하기 버튼에 마우스 오버 시 스타일 */
+.cart-purchase-btn:hover {
+  background-color: #388e3c; /* 마우스 오버 시 배경색을 진한 초록색으로 변경 */
+}

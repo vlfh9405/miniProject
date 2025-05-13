@@ -1,16 +1,22 @@
 import "../css/HomeItem.css"
-const HomeItem = ({img,productName,productPrice}) => {
+import { Link } from "react-router-dom";
+const HomeItem = ({...product}) => {
   return(
+     <>
+     <Link to={`product/product/detail/${product.id}`} className="link">
     <div className="HomeItem">
         <div className="imgBox">
-          <img src = {img}/>
+          <img src = {product.image}/>
         </div>
 
         <div className="textBox">
-          <div className="productName">{productName}</div>
-          <div className="productPrice">{productPrice}</div>
+          <div className="productName">{product.pdName}</div>
+          <div className="productPrice">{product.price.toLocaleString('ko-KR')}원</div>
         </div>
     </div>
+    </Link>
+     </>
+  
   )
 }
 export default HomeItem;

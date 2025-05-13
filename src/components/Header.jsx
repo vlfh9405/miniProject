@@ -1,8 +1,6 @@
 import {useNavigate} from "react-router-dom";
 import logo from "../img/Preview.png";
 import "../css/Header.css"
-import HeaderItem from "./HeaderItem";
-
 const Header = () => {
   const navigate = useNavigate();
   const onClickGoHome = () =>{
