@@ -2,6 +2,7 @@
 import { Routes, Route, Link } from 'react-router-dom';  // ❗ Router 제거
 // React에서 useState 훅을 임포트하여 상태를 관리합니다.
 import { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 // 하위 컴포넌트들 (상품 목록, 상품 상세, 장바구니, 검색바 등)을 임포트합니다.
 import ProductList from './ProductList';
 import ProductDetail from './ProductDetail';
@@ -13,8 +14,8 @@ import productData from '../data/productData';
 // 이 컴포넌트의 스타일을 위한 CSS 파일을 임포트합니다.
 import '../css/ProductRouting.css'
 
-export default function Routing() {
-
+export default function Routing({isLoggedIn}) {
+  const navigate = useNavigate();
   // 장바구니 상태와 상품 목록 및 필터링된 상품 목록을 관리하는 useState 훅을 사용합니다.
   const [cart, setCart] = useState([]); // 장바구니 아이템을 저장하는 상태
   const [products, setProducts] = useState(productData); // 전체 상품 목록
@@ -126,6 +127,14 @@ export default function Routing() {
     setFiltered(result); // 필터링된 결과를 상태에 저장
   };
 
+  const loginChack = () => {
+      if(!isLoggedIn){
+        alert("로그인이 필요합니다.")
+        navigate("/login");
+      }else{
+        navigate("/product/cart");
+      }
+  }
   return (
     <>
       {/* 상단 네비게이션 바 */}
@@ -133,7 +142,7 @@ export default function Routing() {
         <nav className="navbar">
           {/* 상품 목록과 장바구니 페이지로 이동할 수 있는 링크 */}
           <Link to="/product">상품 목록</Link>
-          <Link to="/product/cart">장바구니</Link>
+          <button onClick={loginChack}>장바구니</button>
         </nav>
       </header>
   

@@ -1,21 +1,10 @@
 // Cart.css 스타일 시트를 임포트하여 이 컴포넌트에 스타일을 적용합니다.
 import '../css/Cart.css';
-import { useNavigate } from 'react-router-dom';
-import { useEffect } from 'react';
 // Cart 컴포넌트는 장바구니 항목(cartItems), 수량 증가(onIncrease), 감소(onDecrease), 제거(onRemove), 구매(onPurchase) 기능을 props로 받습니다.
 export default function Cart({ cartItems, onIncrease, onDecrease, onRemove, onPurchase }) {
   // cartItems 배열을 순회하며 각 아이템의 가격과 수량을 곱하여 총합을 계산합니다.
-  const navigate = useNavigate();
+
   
-  useEffect(() => {
-    // localStorage에서 로그인된 사용자 정보 확인
-    const savedUser = JSON.parse(localStorage.getItem("user"));
-    
-    if (!savedUser) {
-      alert("로그인이 필요합니다.");
-      navigate("/login"); // 로그인 안 되어 있으면 로그인 페이지로 이동
-    }},[navigate])
-    
     const total = cartItems.reduce((sum, item) => sum + item.price * item.quantity, 0);
   return (
     

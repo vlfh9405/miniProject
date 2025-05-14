@@ -1,6 +1,6 @@
 import {Routes, Route} from "react-router-dom"
 import './App.css';
-import MainPage from "./components/MaiaPage";
+import MainPage from "./components/MainPage";
 import { useState } from "react";
 import Notice from "./components/Notice";
 import SignupPage from "./components/SignupPage";
@@ -22,7 +22,7 @@ function App() {
     <HeaderItem isLoggedIn = {isLoggedIn} setIsLoggedIn = {setIsLoggedIn}/>
     </div>
   <Routes>
-    <Route path="/*" element={<MainPage />}>
+    <Route path="/*" element={<MainPage isLoggedIn = {isLoggedIn}/>}>
       <Route path="notice" element={<Notice />} />
     </Route>
 
