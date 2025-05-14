@@ -1,0 +1,63 @@
+.Notices {
+    width: 100%;
+    text-align: center;
+    border-collapse: collapse;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+.Notices th {
+    padding: 10px;
+    border-bottom: 1px solid black;
+    background-color: lightgoldenrodyellow;
+}
+
+.Notices td {
+    padding: 15px;
+    border-bottom: 1px solid lightgrey;
+    font-size: 15px;
+}
+
+td a {
+    color: inherit;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 500;
+    white-space: nowrap;
+    transition: all 0.2s ease;
+}
+
+.Notices td a:hover {
+  color: gray;
+  text-decoration: underline;
+}
+
+
+td a:visited{
+    color: inherit;
+}
+
+.button-group{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;       /* 가로 정렬 */
+    justify-content: center; /* 왼쪽 정렬 */
+    gap: 20px;      
+}
+
+.button-group button{
+    border: none;
+    padding: 5px 10px;
+    border-radius: 10%;
+}
+
+.button-group button:hover {
+    background-color: #f0f0f0;
+}
+
+.arrow{
+    background-color: white;
+    display: flex;
+    justify-content: center; /* 왼쪽 정렬 */
+    gap: 20px;    
+}

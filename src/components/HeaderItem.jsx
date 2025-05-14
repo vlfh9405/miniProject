@@ -19,7 +19,7 @@ const HeaderItem = ({ isLoggedIn, setIsLoggedIn }) => {
   };
 
   const onClickMypage = () => {
-    navigate("/mypage"); 
+    navigate("/myPage"); 
   };
 
   return (

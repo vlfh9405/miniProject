@@ -1,6 +1,6 @@
 // React의 useState 훅을 불러옴 (상태 관리용)
 import { useState } from "react";
-import Header from "./Header";
+
 import { useNavigate } from "react-router-dom";
 // 로그인 폼에 사용할 CSS 파일 import
 import "../css/LoginForm.css";

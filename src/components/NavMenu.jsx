@@ -13,7 +13,9 @@ const NaviMenu = () => {
       setActiveMenu("product");
     } else if (path.startsWith("/notice")) {
       setActiveMenu("notice");
-    } else {
+    } else if (path.startsWith("/myPage")) {
+      setActiveMenu("");
+    }else {
       setActiveMenu("home");
     }
   }, [location.pathname]);
