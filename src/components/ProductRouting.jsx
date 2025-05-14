@@ -130,7 +130,6 @@ export default function Routing() {
     <>
       {/* 상단 네비게이션 바 */}
       <header>
-        <div className="navbar-title">상품</div>
         <nav className="navbar">
           {/* 상품 목록과 장바구니 페이지로 이동할 수 있는 링크 */}
           <Link to="/product">상품 목록</Link>

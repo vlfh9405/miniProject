@@ -8,3 +8,7 @@ body{
   height: 100%;
   margin: 0 auto;
 }
+.HeaderBox{
+  display: flex;
+  justify-content: space-between;
+}

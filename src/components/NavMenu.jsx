@@ -2,22 +2,20 @@ import "../css/NavMenu.css";
 import { useNavigate, useLocation } from "react-router-dom";
 import { useState, useEffect } from "react";
 
-
 const NaviMenu = () => {
   const navigate = useNavigate();
   const location = useLocation();
-
-  const getInitialMenu = () => {
-    if (location.pathname === "/product") return "product";
-    if (location.pathname === "/notice") return "notice";
-    return "home"; // 기본은 home
-  };
-
-  const [activeMenu, setActiveMenu] = useState(getInitialMenu);
+  const [activeMenu, setActiveMenu] = useState("home"); // 초기값은 home으로 시작
 
   useEffect(() => {
-    // 경로가 바뀔 때 메뉴 상태 업데이트 (뒤로가기 등도 반영)
-    setActiveMenu(getInitialMenu());
+    const path = location.pathname;
+    if (path.startsWith("/product")) {
+      setActiveMenu("product");
+    } else if (path.startsWith("/notice")) {
+      setActiveMenu("notice");
+    } else {
+      setActiveMenu("home");
+    }
   }, [location.pathname]);
 
   const handleClick = (menu) => {
