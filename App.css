@@ -1,0 +1,19 @@
+.TopBar {
+  display: flex;
+  flex-direction: row;       /* 가로 정렬 */
+  justify-content: flex-start; /* 왼쪽 정렬 */
+  gap: 20px;                 /* 링크 사이 간격 */
+  padding: 10px;
+  font-weight: 500;
+}
+
+.TopBar a {
+  color: inherit;
+  text-decoration: none;
+  font-size: 15px;
+  white-space: nowrap;
+}
+
+.TopBar a:visited{
+    color: inherit;
+}
