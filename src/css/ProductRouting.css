@@ -1,43 +1,37 @@
-/* .navbar: 네비게이션 바의 전체 스타일 */
 .navbar {
-  display: flex; /* flexbox 레이아웃을 사용하여 아이템들을 배치 */
-  justify-content: center; /* 아이템들을 수평 중앙 정렬 */
-  align-items: center; /* 아이템들을 수직 중앙 정렬 */
-  background-color: #f8f9fa; /* 배경색을 연한 회색으로 설정 */
-  padding: 15px 0; /* 위 아래 여백을 15px로 설정 */
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* 미세한 그림자 효과 추가 */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f8f9fa;
+  padding: 15px 0;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-/* .navbar a: 네비게이션 바의 링크 스타일 */
-.navbar a {
-  text-decoration: none; /* 링크의 기본 밑줄을 제거 */
-  color: #333; /* 텍스트 색상을 어두운 회색으로 설정 */
-  font-weight: 500; /* 텍스트의 굵기를 500으로 설정 */
-  margin: 0 20px; /* 링크 간의 간격을 20px로 설정 */
-  font-size: 1.1em; /* 폰트 크기를 1.1배로 설정 */
-  transition: color 0.3s; /* 색상 변화에 0.3초의 부드러운 전환 효과 추가 */
-}
-.navbar button{
-  text-decoration: none; /* 링크의 기본 밑줄을 제거 */
-  color: #333; /* 텍스트 색상을 어두운 회색으로 설정 */
-  font-weight: 500; /* 텍스트의 굵기를 500으로 설정 */
-  margin: 0 20px; /* 링크 간의 간격을 20px로 설정 */
-  font-size: 1.1em; /* 폰트 크기를 1.1배로 설정 */
-  transition: color 0.3s; /* 색상 변화에 0.3초의 부드러운 전환 효과 추가 */
-  background:none ;
+.navbar a,
+.navbar button {
+  text-decoration: none;
+  color: #333;
+  font-weight: 600; 
+  margin: 0 20px;
+  font-size: 1.1em;
+  background: none;
+  transition: color 0.3s;
+  font-family: 'Segoe UI', 'Pretendard', 'Noto Sans KR', sans-serif; 
+  letter-spacing: 0.5px; 
+  border: none; 
+  cursor: pointer;
 }
 
-/* .navbar a: 링크에 마우스를 올렸을 때의 스타일 */
-.navbar a:hover ,.navbar button:hover{
-  background:none ;
-  color: #007bff; /* 마우스를 올렸을 때 텍스트 색상을 파란색으로 변경 */
+.navbar a:hover,
+.navbar button:hover {
+  color: #007bff;
+  background: none;
 }
 
-/* .navbar-title: 네비게이션 바의 제목 스타일 */
 .navbar-title {
-  text-align: center; /* 텍스트를 중앙 정렬 */
-  font-size: 1.5em; /* 폰트 크기를 1.5배로 설정 */
-  font-weight: bold; /* 텍스트를 굵게 설정 */
-  margin-top: 20px; /* 제목 상단에 20px 여백 추가 */
-  margin-bottom: 10px; /* 제목 하단에 10px 여백 추가 */
+  text-align: center;
+  font-size: 1.5em;
+  font-weight: bold;
+  margin-top: 20px;
+  margin-bottom: 10px;
 }
