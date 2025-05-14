@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 import '../css/ProductList.css';
 
 // ProductList 컴포넌트는 상품 목록을 표시하고, 수량 변경 및 장바구니 추가 기능을 제공합니다.
-export default function ProductList({ products, onAddToCart }) {
+export default function ProductList({ products, onAddToCart, isLoggedIn }) {
   // 상품별 수량을 추적하는 상태를 관리합니다. 초기값은 빈 객체로 설정됩니다.
   const [quantities, setQuantities] = useState({});
 
@@ -27,6 +27,10 @@ export default function ProductList({ products, onAddToCart }) {
 
   // 장바구니에 상품을 추가하는 함수입니다.
   const handleAdd = (product) => {
+    if(!isLoggedIn){
+      alert("로그인이 필요합니다.")
+      return;
+    }
     // 해당 상품의 수량을 가져오고, 수량이 없으면 기본값 1로 설정합니다.
     const quantity = quantities[product.id] || 1;
     // onAddToCart 함수로 상품과 수량을 전달하여 장바구니에 추가합니다.

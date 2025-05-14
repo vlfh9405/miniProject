@@ -23,6 +23,7 @@ export default function Routing({isLoggedIn}) {
 
   // 장바구니에 상품을 추가하는 함수입니다.
   const handleAddToCart = (product, quantity) => {
+    
     const selectedProduct = products.find((p) => p.id === product.id); // 선택된 상품을 찾습니다.
     
     // 재고가 부족하면 경고를 표시하고 함수 실행을 멈춥니다.
@@ -133,7 +134,7 @@ export default function Routing({isLoggedIn}) {
         navigate("/login");
       }else{
         navigate("/product/cart");
-      }
+      } 
   }
   return (
     <>
@@ -155,12 +156,12 @@ export default function Routing({isLoggedIn}) {
           element={
             <>
               <SearchBar onSearch={handleSearch} /> {/* 검색바 컴포넌트 */}
-              <ProductList products={filtered} onAddToCart={handleAddToCart} /> {/* 상품 목록 컴포넌트 */}
+              <ProductList products={filtered} onAddToCart={handleAddToCart} isLoggedIn ={isLoggedIn}/> {/* 상품 목록 컴포넌트 */}
             </>
           }
           />
         {/* 상품 상세 페이지 경로 '/detail/:id' */}
-        <Route path="product/detail/:id" element={<ProductDetail products={products} />} />
+        <Route path="product/detail/:id" element={<ProductDetail products={products}/>} />
         {/* 장바구니 페이지 경로 '/cart' */}
         <Route
           path="/cart"
