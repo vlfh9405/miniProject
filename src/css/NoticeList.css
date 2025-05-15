@@ -1,63 +1,91 @@
-.Notices {
-    width: 100%;
+h1 {
+    font-size: 36px;
     text-align: center;
+    margin-top: 40px;
+    color: #222;
+  }
+  
+  .Notices {
+    width: 100%;
+    max-width: 1000px;
+    margin: 40px auto;
     border-collapse: collapse;
-    border-top: 1px solid black;
-    border-bottom: 1px solid black;
-}
-
-.Notices th {
-    padding: 10px;
-    border-bottom: 1px solid black;
-    background-color: lightgoldenrodyellow;
-}
-
-.Notices td {
-    padding: 15px;
-    border-bottom: 1px solid lightgrey;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #fff;
+    border-top: 2px solid #333;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  }
+  
+  .Notices thead {
+    background-color: #fff8dc;
+  }
+  
+  .Notices th,
+  .Notices td {
+    padding: 14px 16px;
+    text-align: center;
     font-size: 15px;
-}
-
-td a {
-    color: inherit;
+    border-bottom: 1px solid #eee;
+  }
+  
+  .Notices th {
+    font-weight: 600;
+    color: #444;
+  }
+  
+  .Notices td {
+    color: #555;
+  }
+  
+  .Notices tr:hover {
+    background-color: #f9f9f9;
+  }
+  
+  .Notices td a {
+    color: #0077cc;
     text-decoration: none;
-    font-size: 15px;
+    transition: color 0.2s ease;
     font-weight: 500;
-    white-space: nowrap;
+  }
+  
+  .Notices td a:hover {
+    color: #004a99;
+    text-decoration: underline;
+  }
+  
+  .Notices td a:visited {
+    color: #0077cc;
+  }
+  
+  .button-group {
+    margin: 40px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .button-group .arrow button,
+  .button-group .bottonBar button {
+    padding: 8px 14px;
+    font-size: 15px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    background-color: #fff;
+    color: #333; 
+    cursor: pointer;
     transition: all 0.2s ease;
-}
-
-.Notices td a:hover {
-  color: gray;
-  text-decoration: underline;
-}
-
-
-td a:visited{
-    color: inherit;
-}
-
-.button-group{
-    margin-top: 30px;
+  }
+  
+  .button-group .arrow button:hover,
+  .button-group .bottonBar button:hover {
+    background-color: #007bff;
+    color: #fff;
+    border-color: #007bff;
+  }
+  
+  .button-group .bottonBar {
     display: flex;
-    flex-direction: row;       /* 가로 정렬 */
-    justify-content: center; /* 왼쪽 정렬 */
-    gap: 20px;      
-}
-
-.button-group button{
-    border: none;
-    padding: 5px 10px;
-    border-radius: 10%;
-}
-
-.button-group button:hover {
-    background-color: #f0f0f0;
-}
-
-.arrow{
-    background-color: white;
-    display: flex;
-    justify-content: center; /* 왼쪽 정렬 */
-    gap: 20px;    
-}
+    gap: 10px;
+  }
+  

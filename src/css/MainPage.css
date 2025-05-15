@@ -1,4 +1,24 @@
-.HeaderBox{
+.MainPage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f4f8fb;
+  min-height: 100vh;
+  padding-bottom: 40px;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.MainPage > *:not(:first-child) {
+  width: 100%;
+  max-width: 1280px;
+  margin-top: 30px;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+.HeaderBox {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
 }

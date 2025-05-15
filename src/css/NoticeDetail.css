@@ -1,110 +1,132 @@
-h1{
-    font-size: 40px;
+h1 {
+  font-size: 36px;
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  color: #222;
 }
 
-.notice-content .notice-meta {
+.notice-content {
+  background-color: #fff;
+  padding: 24px 32px;
+  margin: 0 auto;
+  max-width: 900px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+.notice-content h2 {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.notice-meta {
   display: flex;
-  justify-content: flex-start;
-  gap: 20px;
-  padding-left: 5px;
-  padding-bottom: 15px;
-  border-bottom: 1px solid lightgrey;
-  color: rgb(87, 86, 86);
-  font-size: 15px;
-}
-
-.notice-content{
-    padding: 10px 5px;
-    font-size: 100%;
-    
-}
-
-.notice-content h2{
-    font-size: 25px;
-    margin: 10px 3px;
-}
-
-.notice-content p{
-    padding: 80px 0px;
-    font-size: 17px;
-    
-}
-
-.content h1{
-    text-align: center;
-}
-.postRow a{
-    text-align: center;
-    color: inherit;
-    text-decoration: none;
-}
-
-.postRow .label {
-  width: 60px;
-  text-align: left; /* ✅ 왼쪽 정렬 */
-  font-weight: bold;
-  padding-left: 30px;
-}
-
-.postRow .content {
-  flex: 1;
-  padding: 0 10px;
-  text-align: left; /* ✅ 왼쪽 정렬 */
-  padding-left: 60px;
-}
-
-.postRow .date {
-  width: 100px;
-  text-align: left; /* ✅ 또는 right 원하면 변경 가능 */
+  gap: 16px;
   font-size: 14px;
-  color: gray;
-  padding-right: 30px;
+  color: #666;
+  margin-bottom: 24px;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 12px;
+}
+
+.notice-content p {
+  padding: 0;
+  margin: 20px 0;
+  white-space: pre-line;
+}
+
+.postNav {
+  max-width: 900px;
+  margin: 40px auto 0;
+  border-top: 2px solid #eee;
 }
 
 .postRow {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 12px 0;
-  border-bottom: 1px solid #eee;
+  padding: 12px 20px;
+  border-bottom: 1px solid #f0f0f0;
+  transition: background-color 0.3s;
 }
 
-.postNav .postRow:hover {
-    background-color: antiquewhite;
+.postRow:hover {
+  background-color: #fafafa;
+}
+
+.postRow .label {
+  font-weight: 600;
+  color: #444;
+  width: 80px;
+}
+
+.postRow .content {
+  flex: 1;
+  text-align: left;
+  padding: 0 10px;
+}
+
+.postRow .content a {
+  text-decoration: none;
+  color: #0077cc;
+  font-weight: 500;
+}
+
+.postRow .content a:hover {
+  text-decoration: underline;
+}
+
+.postRow .date {
+  width: 120px;
+  font-size: 13px;
+  color: #999;
+  text-align: right;
 }
 
 .noticelist {
   display: flex;
-  justify-content: center;  /* ✅ 가로 중앙 정렬 */
-  margin-top: 20px;
+  justify-content: center;
+  margin-top: 40px;
 }
 
-.noticelist button{
+.noticelist button {
   padding: 10px 30px;
-  border: 1px solid grey;
-  border-radius: 5px;
+  background-color: #007bff;
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 6px;
   cursor: pointer;
-  transition: background-color 0.2s;
-  margin-top: 50px;
-  font-size: 18px;
-  line-height: 22px;
+  transition: background-color 0.3s;
 }
 
 .noticelist button:hover {
-    background-color: #f9f9f9;
-    cursor: pointer;
+  background-color: #0056b3;
 }
 
-hr{
-    margin: 0;
-    padding: 0;
+.error {
+  text-align: center;
+  margin-top: 100px;
 }
 
-.error{
-    text-align: center;
+.error h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
 }
-.error a{
-    margin-left: 70%;
-    text-decoration: none;
 
+.error a button {
+  padding: 10px 25px;
+  font-size: 16px;
+  background-color: #f2f2f2;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.error a button:hover {
+  background-color: #e0e0e0;
 }

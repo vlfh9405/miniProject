@@ -1,8 +1,23 @@
-.Header{
+.Header {
   display: flex;
-  justify-content:space-between;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+  padding: 0 40px;
+  background: linear-gradient(90deg, #34b6e7, #1d8bd1);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
-.logo img{
+
+.logo img {
   cursor: pointer;
-  width: 100px;
+  width: 120px;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.logo img:hover {
+  transform: scale(1.05);
+  opacity: 0.9;
 }
