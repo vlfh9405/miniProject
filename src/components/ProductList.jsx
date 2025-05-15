@@ -64,7 +64,7 @@ export default function ProductList({ products, onAddToCart, isLoggedIn }) {
             />
             <div className="product-details">
               {/* 상품명은 상품 상세 페이지로 이동할 수 있는 링크입니다. */}
-              <Link to={`product/detail/${product.id}`}>{product.pdName}</Link>
+              <Link to={`./detail/${product.id}`}>{product.pdName}</Link>
               {/* 상품의 가격을 원 단위로 표시하고, 천 단위 구분 기호를 사용합니다. */}
               <p className="price">{product.price.toLocaleString()}원</p>
               {/* 상품의 카테고리를 표시합니다. */}

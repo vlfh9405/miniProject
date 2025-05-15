@@ -161,7 +161,7 @@ export default function Routing({isLoggedIn}) {
           }
           />
         {/* 상품 상세 페이지 경로 '/detail/:id' */}
-        <Route path="product/detail/:id" element={<ProductDetail products={products}/>} />
+        <Route path="/detail/:id" element={<ProductDetail products={products}/>} />
         {/* 장바구니 페이지 경로 '/cart' */}
         <Route
           path="/cart"
