@@ -25,7 +25,7 @@
 
 /* 도트 (하단 버튼) 위치 및 색상 스타일 */
 .MainImg .slick-dots {
-  bottom: 10px;
+  bottom: 2px;
 }
 
 .MainImg .slick-dots li button:before {
@@ -36,4 +36,11 @@
 
 .MainImg .slick-dots li.slick-active button:before {
   color: #007dd1;
+}
+
+.MainImg img {
+  width: 95%;       /* 부모 요소 너비에 맞게 */
+  max-height: 500px; /* 높이를 제한하여 너무 커지지 않도록 */
+  object-fit: cover; /* 이미지 비율 유지하며 채우기 */
+  margin: 0 auto;    /* 가운데 정렬 */
 }
