@@ -14,10 +14,10 @@ const MainPage = ({isLoggedIn}) => {
       <Routes>
         <Route path="/*" element={<Home/>}/>
         <Route path="/product/*" element={<ProductRouting isLoggedIn = {isLoggedIn}/>}/>
-        <Route path ="/cart" element = {<Cart />}/>
+        <Route path="/cart" element = {<Cart />}/>
         <Route path="/notice" element={<NoticeList/>}/>
         <Route path="/notice/:id" element={<NoticeDetail />} />
-        <Route path = "/myPage" element = {<MypageInfo/>}/>
+        <Route path="/myPage" element = {<MypageInfo/>}/>
       </Routes>
     </div>
   )

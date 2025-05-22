@@ -20,7 +20,7 @@ export default function ProductDetail({ products }) {
 
   // '상품 목록으로 돌아가기' 버튼을 클릭했을 때 호출되는 함수입니다. 홈 페이지로 이동합니다.
   const handleBack = () => {
-    navigate('/');
+    navigate('/product');
   };
 
   return (
