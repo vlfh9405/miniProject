@@ -7,6 +7,7 @@ import Cart from "./Cart";
 import "../css/MainPage.css";
 import NoticeDetail from "./NoticeDetail";
 import MypageInfo from "./MyPageInfo";
+import MypageMenuBar from "./MypageMenuBar";
 const MainPage = ({isLoggedIn}) => {
   return(
     <div className="MainPage">
@@ -17,7 +18,8 @@ const MainPage = ({isLoggedIn}) => {
         <Route path="/cart" element = {<Cart />}/>
         <Route path="/notice" element={<NoticeList/>}/>
         <Route path="/notice/:id" element={<NoticeDetail />} />
-        <Route path="/myPage" element = {<MypageInfo/>}/>
+        <Route path="/myPage" element = {<MypageMenuBar/>}/>
+        <Route path="/myPage/info" element = {<MypageInfo/>}/>
       </Routes>
     </div>
   )
